@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Namoro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Página Inicial -->
+    <div class="pagina-inicial">
+        <h1>Wendy, quer namorar comigo? 💖</h1>
+        <div class="opcoes">
+            <button id="sim">Sim</button>
+            <button id="nao">Não</button>
+        </div>
+    </div>
+
+    <!-- Página de Contrato -->
+    <div class="pagina-contrato" id="contrato" style="display: none;">
+        <h2>Contrato de Namoro - Paulo Victor & Wendy</h2>
+        <p>Eu, Paulo Victor, estou pedindo oficialmente a Wendy em namoro, e me comprometo a ser o melhor namorado que ela poderia ter, com os seguintes termos e condições:</p>
+        <ul>
+            <li>Compromisso de carinho: Prometo te dar carinho, atenção e amor todos os dias, sem exceção.</li>
+            <li>Compromisso de risadas: Me comprometo a te fazer rir, mesmo nos momentos mais difíceis.</li>
+            <li>Compromisso de amizade: Serei seu amigo, confidente e companheiro em todas as situações.</li>
+            <li>Compromisso de apoio: Estarei ao seu lado nos seus sonhos, nos seus projetos e em todos os momentos importantes da sua vida.</li>
+            <li>Compromisso de respeito: Prometo sempre respeitar seus sentimentos, ideias e espaço, sem invadir sua individualidade.</li>
+            <li>Compromisso de crescimento juntos: Me comprometo a te apoiar nos seus momentos de evolução pessoal, ajudando a alcançar seus sonhos e objetivos, e crescer junto com você.</li>
+            <li>Compromisso de lealdade: Prometo ser leal a você, com transparência e honestidade, em todas as situações.</li>
+            <li>Compromisso de diversão: Me comprometo a fazer de cada momento juntos uma oportunidade de diversão e descontração, aproveitando a companhia um do outro ao máximo.</li>
+            <li>Compromisso de confiança: Prometo ser alguém em quem você pode confiar, para dividir seus medos, conquistas e tudo o que está no seu coração.</li>
+            <li>Compromisso de apoio emocional: Estarei ao seu lado nos momentos difíceis, pronto para te apoiar, confortar e passar por qualquer tempestade juntos.</li>
+        </ul>
+        <p><strong>Aceitação:</strong> Marque o coraçãozinho abaixo para aceitar e clicar em "Aceito".</p>
+        
+        <!-- Checkbox do coraçãozinho -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="coracao">
+            <label for="coracao">💖 Marque este coraçãozinho para aceitar!</label>
+        </div>
+        
+        <!-- Botão Aceito -->
+        <button id="aceito" disabled>Aceito</button>
+    </div>
+
+    <!-- Animação de Aceitação -->
+    <div class="animacao" id="animacao" style="display: none;">
+        <h2>🎉 Você aceitou! 🎉</h2>
+        <p>Nosso namoro começou com muito amor! 💖</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
