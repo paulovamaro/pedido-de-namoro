@@ -36,8 +36,8 @@ botaoAceito.addEventListener("click", function() {
 
 // Envio de email"
 document.getElementById("aceito").addEventListener("click", async () => {
-    const email = "paulovamaro@gmail.com"; // Email da Wendy
-    const nome = "Wendy"; // Nome da Wendy
+    const email = "paulo_v_11@hotmail.com"; // Email da Wendy
+    const nome = "Wendy Pertel"; // Nome da Wendy
 
     // Fazer requisição ao backend
     try {
