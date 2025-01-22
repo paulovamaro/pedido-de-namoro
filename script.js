@@ -41,14 +41,14 @@ document.getElementById("aceito").addEventListener("click", async () => {
 
     // Fazer requisição ao backend
     try {
-        const response = await fetch("http://localhost:3000/send-email", {
+        const response = await fetch("https://pedido-de-namoro-1fcc74a7a0be.herokuapp.com/send-email", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, nome }),
         });
 
         if (response.ok) {
-            alert("Email enviado com sucesso!");
+            alert("Confira seu E-mail!");
             document.getElementById("animacao").style.display = "block";
         } else {
             alert("Erro ao enviar o email. Tente novamente mais tarde.");
