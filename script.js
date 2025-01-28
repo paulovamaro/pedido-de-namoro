@@ -24,6 +24,23 @@ checkbox.addEventListener("change", () => {
     botaoAceito.disabled = !checkbox.checked; // Habilita o botão se marcado
 });
 
+// Adicionando confete manualmente
+botaoAceito.addEventListener("click", function() {
+    document.getElementById("contrato").style.display = "none";
+    document.getElementById("animacao").style.display = "block";
+    document.getElementById("animacao").style.animation = "fadeIn 1s forwards";
+
+    // Cria confetes manualmente
+    for (let i = 0; i < 100; i++) {
+        let confetti = document.createElement("div");
+        confetti.classList.add("confetti");
+        confetti.style.left = Math.random() * 100 + "vw";
+        confetti.style.animationDuration = Math.random() * 2 + 1 + "s";
+        document.body.appendChild(confetti);
+    }
+
+});
+
 // Clique no botão "Aceito"
 botaoAceito.addEventListener("click", function() {
     document.getElementById("contrato").style.display = "none";
